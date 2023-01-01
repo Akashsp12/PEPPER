@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+
+
+
+/* navlink  start */
+
+.Link {
+  
+  font-family: 'Raleway', sans-serif;
+ 
+  padding-left: 25px;
+color:white;
+  font-size: 18px;
+  text-decoration: none;
+
+  display: inline-block;
+  
+
+  
+}
+.active{
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  padding-left: 25px;
+color:#f5c332;
+  font-size: 18px;
+
+  display: inline-block;
+  
+
+}
+.active:hover{
+  color: #f5c332;
+}
+
+.Link:hover {
+  color: #f5c332;
+  text-decoration: none;
+  transform: scale(1.1);
+
+}
+
+
+.Basket{
+ 
+font-size: 25px;
+}
+/* navlink end */
+
+
+/* pop side bar */
+.menubars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+  color: #000;
+  
+}
+.navbartoggle {
+  background-color:transparent;
+ 
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+  

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+.Admindash{
+    height: max-content;
+   
+   
+ 
+}
+.dash1 {
+
+    
+    line-height: 3.5;
+ 
+    border-radius: 0.7rem;
+    border: 1px solid #f5c332;
+   
+}
+
+.dash2 {
+    width: fit-content;
+    border-radius: 0.7rem;
+    background-color: aliceblue;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+.Dashlogo{
+    font-family: 'Ms Madi', cursive;
+    font-size: 2rem;
+}
+
+.DashLink {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+ 
+
+}
+
+.DashLink:hover {
+    font-family: 'Raleway', sans-serif;
+    color: #f5c332;
+   
+
+}
+/* .Dashul{
+    margin-bottom: 10px;
+} */

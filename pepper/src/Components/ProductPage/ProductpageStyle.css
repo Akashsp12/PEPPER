@@ -1,0 +1,45 @@
+
+.GridContainer{
+
+
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+
+.cards{
+  margin: 2em auto;
+  width: min-content;
+  text-align: center;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 10px black;
+  padding: 1em 1.5em;
+    /* width: 258px;
+    height: 279px;
+    border: 1px solid green;
+ border-radius: 10px;
+    margin: 5px 5px; */
+}
+.card >.price{
+  font-weight: 800;
+  font-size: 20px;
+}
+.card > .price{
+  font-size: 14px;
+  color:black;
+}
+.Card-img{
+ width: 200px;
+height: 150px;
+    /* width: 248px;
+    height: 145px;
+    z-index: -10;
+    border-radius: 1.2rem;
+    margin: 0 3px; */
+}
+
+.productList{
+  max-height:max-content; 
+    
+}
+

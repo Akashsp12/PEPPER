@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+.HomeView{
+   background-image: url('/public/coverimage.jpg');
+    height: 85vh;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+
+   
+}
+.HomeDisplay{
+    text-align: center;
+    color:white;
+    position:relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.HomeDisplay h3{
+    font-family: 'Kristi', cursive;
+    font-size: 150px;
+}
+.HomeDisplay p{
+      font-family: 'Lora', serif;
+      font-size: 20px;
+}
+
+
+@media (max-width:992px) {
+    .HomeDisplay h3{
+        font-family: 'Kristi', cursive;
+        font-size: 80px;
+    }
+    
+}

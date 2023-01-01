@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+  
+
+}
+/* div{
+  border: 1px solid green;
+} */
+body{
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  transition-property: all 1s ease;
+
+}
+/* logo */
+.logo {
+  font-family: 'Ms Madi', cursive;
+ 
+  text-decoration: none;
+  font-size: 2.0rem;
+  color:whitesmoke;
+ 
+}
+
+.logo:hover {
+  color:#f5c332 ;
+  text-decoration: none;
+
+}
+.logo img{
+  width: 80px;
+  height: 80px;
+}
+
+
+/* logo end */
+/* Side Navbar CSS */
+.navbar {
+ background-color:transparent;
+ height: 15vh;
+  display: flex; 
+  align-items: center;
+}
+.nav-menu {
+  background-color: #00ff55;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+ right: -250%;
+  transition: 1050ms;
+  z-index: 100;
+}
+
+.nav-menu.active {
+  right: 0;
+  transition: 450ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #151414;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+
+.ButtonArea{
+  background-color: #f5c332;
+  border: 3px solid #f5c332;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  
+}
+
+.ButtonArea1{
+  background-color:transparent;
+ 
+ border: none;
+}
+.Sign{
+  color: rgb(255, 255, 255);
+  font-size: 34px;
+ 
+
+ 
+}
+.Signlink{
+  color: rgb(255, 255, 255);
+  text-align: center;
+ display: flex;
+ align-items: center;
+ font-family: 'Raleway', sans-serif;
+ font-weight: 500;
+
+ 
+  
+}
+.Signlink:hover{
+  color: rgb(255, 255, 255);
+}
+.hamlink{
+  color: white;
+}
+span {
+  margin-left: 16px;
+}
+@media (max-width:769px){
+  .hamlink{
+    font-size: 32px;
+  }
+}
+
+/* end of side nav bar */
+
+
+/* homepage */
+
+/* homepage end */
+
