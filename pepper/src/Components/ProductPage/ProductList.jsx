@@ -19,6 +19,9 @@ const ProductList = () => {
         setMenuItems(response.data)
 
     }
+    const AddhandlerCart=(list)=>{
+        alert(list._id);
+    }
 
 
     return (
@@ -42,7 +45,7 @@ const ProductList = () => {
                                 <p className='discription'>{list.description}</p>
                             </div>
                             <div className="">
-                               <button className='btn btn-outline-primary'>Add to Cart</button>
+                               <button className='btn btn-outline-primary' onClick={()=>AddhandlerCart(list)}>Add to Cart</button>
                             </div>
                         </div>
                     )

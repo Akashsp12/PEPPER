@@ -38,7 +38,7 @@ function Navbar() {
               </li>
 
               <li class="nav-item">
-                <Link class="nav-link" className={Styles.Link} to="/Cart">{<GiIcons.GiShoppingCart className={Styles.Basket} />}</Link>
+                <Link class="nav-link" className={Styles.Link} to="/Basket">{<GiIcons.GiShoppingCart className={Styles.Basket} />}</Link>
               </li>
 
             </ul>

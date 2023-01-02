@@ -48,7 +48,7 @@ const UpdateProduct = () => {
   return (
     <div className='container bg-white'>
 
-      <form method='post' action='' >
+      <form method='' action='' >
         <div className="row">
 
           <div className="col-md-6 ">
