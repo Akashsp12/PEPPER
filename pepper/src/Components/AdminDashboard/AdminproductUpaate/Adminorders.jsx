@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import {Navigate, NavLink, Route, Routes } from 'react-router-dom';
+import { Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import { FiEdit } from "react-icons/fi";
 import { MdDelete } from "react-icons/md";
-import { getmenuItemApi } from '../../../API/AddMenuApi'
+import { getmenuItemApi, DelmenuItemApi } from '../../../API/AddMenuApi'
+
 import './AdminOrderStyles.css'
 
 const Adminorders = () => {
@@ -15,6 +16,11 @@ const Adminorders = () => {
     const response = await getmenuItemApi()
     setMenuItems(response.data)
 
+  }
+  const MenuItemsDel = async (id) => {
+    await DelmenuItemApi(id)
+    window.location.reload()
+    alert('deleted')
   }
 
 
@@ -40,7 +46,7 @@ const Adminorders = () => {
                 <td>{list.FoodType} </td>
                 <td> <button class='tableBtn'><NavLink to={`/Edit/${list._id}`}  ><FiEdit className='tableBtn' /></NavLink>
                 </button> </td>
-                <td> <button class='tableBtn' ><MdDelete className='tableBtn' /></button> </td>
+                <td> <button class='tableBtn' onClick={() => MenuItemsDel(list._id)}><MdDelete className='tableBtn' /></button> </td>
 
               </tr>
 
@@ -52,8 +58,8 @@ const Adminorders = () => {
 
         </table>
         <Routes>
-                <Route path='/Edit/:id' element={<Navigate to='/Edit/:id'></Navigate>}></Route>
-            </Routes>
+          <Route path='/Edit/:id' element={<Navigate to='/Edit/:id'></Navigate>}></Route>
+        </Routes>
       </div>
 
 

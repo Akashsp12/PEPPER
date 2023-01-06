@@ -21,3 +21,8 @@ export const updateMenuApi=async(id,UpdateMenuItems)=>{
     return axios.put(`${BaseUrl}/put/${id}`,UpdateMenuItems)
 
 }
+export const DelmenuItemApi=async(id)=>{
+    return axios.delete(`${BaseUrl}/del/${id}`)
+ 
+
+}

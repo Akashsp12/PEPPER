@@ -6,7 +6,7 @@ import { MdDelete } from "react-icons/md";
 import './AdminContactStyles.css'
 
 const { getContactApi } = require('../../../API/Contactapi')
-const {getContactId}=require('../../../API/Contactapi')
+const {getContactId,DelContactApi}=require('../../../API/Contactapi')
 
 
 const AdminContactList = () => {
@@ -35,6 +35,11 @@ const AdminContactList = () => {
     setContacts(response.data)
 
 }
+const delContact=async(id)=>{
+ 
+  await DelContactApi(id)
+  window.location.reload()
+}
 
 
 
@@ -49,6 +54,7 @@ const AdminContactList = () => {
             <th>Email</th>
             <th>Phone</th>
             <th>Message</th>
+            <th>Delete</th>
 
           </tr>
           {
@@ -60,7 +66,7 @@ const AdminContactList = () => {
                 <td>{Con.ContactMsg} </td>
 
 
-                <td> <button class='tableBtn'><Link to={`/AdminDash/AdminContactList/${Con._id}`}  ><MdDelete className='tableBtn' /></Link></button> </td>
+                <td> <button class='tableBtn' onClick={()=>delContact(Con._id)}><MdDelete className='tableBtn' /></button> </td>
 
               </tr>
             )

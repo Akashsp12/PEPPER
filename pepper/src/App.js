@@ -23,7 +23,8 @@ import AdminUser from "./Components/AdminDashboard/AdminUser/AdminUser";
 import UpdateProduct from "./Components/AdminDashboard/AdminproductUpaate/UpdateProduct";
 import Adminorders from "./Components/AdminDashboard/AdminproductUpaate/Adminorders";
 import AdminContactList from "./Components/AdminDashboard/AdminContactList/AdminContactList";
-// import Updatemenu from "./Components/AdminDashboard/AdminproductUpaate/Updatemenu";
+import { Cart } from "./Components/Cart/Cart";
+ 
 function App() {
  
   return (

@@ -16,3 +16,8 @@ export const getContactId=async(id)=>{
     return axios.get(`${ContactUrl}${ObjectId}`)
 
 }
+export const DelContactApi=async(id)=>{
+   
+    return axios.delete(`${ContactUrl}${id}`)
+
+}
